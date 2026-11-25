@@ -11,8 +11,10 @@ CREATE TABLE IF NOT EXISTS replacement_estimates (
  station text PRIMARY KEY REFERENCES fountain_stations(code), history_week date NOT NULL,
  expected real NOT NULL CHECK(expected>=0), upper int NOT NULL CHECK(upper>=0),
  demand_class text NOT NULL CHECK(demand_class IN ('base','busy','festival')),
- exposure real NOT NULL CHECK(exposure>=0), calibration jsonb NOT NULL
+ exposure real NOT NULL CHECK(exposure>=0), calibration jsonb NOT NULL,
+ basis text NOT NULL DEFAULT ''
 );
+ALTER TABLE replacement_estimates ADD COLUMN IF NOT EXISTS basis text NOT NULL DEFAULT '';
 CREATE TABLE IF NOT EXISTS service_rounds (
  code text PRIMARY KEY,district text NOT NULL, service_on date NOT NULL, capacity int NOT NULL CHECK(capacity>0)
 );

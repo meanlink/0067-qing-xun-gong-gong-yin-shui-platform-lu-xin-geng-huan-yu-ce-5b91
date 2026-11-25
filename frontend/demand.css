@@ -2,4 +2,5 @@
 .forecast-settings p{grid-column:1/-1;margin:0}
 .forecast-lines section{margin-top:1.4rem}
 .forecast-lines table strong{font-size:1.3rem;color:var(--s-accent)}
+.basis-chip{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;background:var(--s-surface,#f4f6f8);padding:.1rem .35rem;border-radius:4px;color:var(--s-muted,#5c6670)}
 @media(max-width:695px){.forecast-settings{grid-template-columns:1fr}}
