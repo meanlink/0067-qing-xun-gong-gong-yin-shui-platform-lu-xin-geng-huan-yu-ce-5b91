@@ -1,0 +1,5 @@
+.forecast-settings{display:grid;grid-template-columns:1fr 1fr auto;align-items:end;gap:.7rem}
+.forecast-settings p{grid-column:1/-1;margin:0}
+.forecast-lines section{margin-top:1.4rem}
+.forecast-lines table strong{font-size:1.3rem;color:var(--s-accent)}
+@media(max-width:695px){.forecast-settings{grid-template-columns:1fr}}

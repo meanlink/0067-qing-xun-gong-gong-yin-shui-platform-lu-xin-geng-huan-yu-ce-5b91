@@ -1,0 +1,5 @@
+.district-index{display:grid;grid-template-columns:1.85fr 1fr;gap:1rem}
+.district-index h2{background:var(--s-accent);color:var(--s-onaccent);padding:.45rem .8rem;margin:0}
+.district-index article{border:1px solid var(--s-line);border-top:0;padding:.9rem}
+.district-index dl{display:grid;grid-template-columns:8em 1fr;margin:0}.district-index dd{margin:0}
+@media(max-width:650px){.district-index{grid-template-columns:1fr}}

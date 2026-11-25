@@ -1,0 +1,4 @@
+.meter-log{display:grid;grid-template-columns:2fr 1fr;align-items:start;gap:1.5rem}
+.meter-log summary{cursor:pointer;color:var(--s-accent);padding:.4rem;border-bottom:1px solid var(--s-line)}
+.meter-log details{margin-bottom:.6rem}
+@media(max-width:750px){.meter-log{grid-template-columns:1fr}}

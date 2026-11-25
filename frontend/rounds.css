@@ -1,0 +1,5 @@
+.round-deck{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1rem}
+.round-deck article{border-block-start:5px solid var(--s-accent)}
+.round-deck fieldset{border:1px solid var(--s-line);margin:.5rem 0;display:grid;gap:.4rem}
+.round-deck fieldset label{display:block}
+.round-deck meter{width:50%}
